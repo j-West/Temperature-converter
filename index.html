@@ -6,19 +6,29 @@
    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <label for="temp">Please enter a number to be converted</label>
-  <input type="text" id="temp" name="userInput" value="">
+  <form>
+    <label for="temp">Please enter a number to be converted</label>
+    <input type="text" id="temp" name="userInput" value="">
 
-  <label for="C">Celsius</label>
-  <input type="radio" id="C" name="select" value="Celsius">
+    <label for="C">Celsius</label>
+    <input type="radio" id="C" name="select" value="Celsius">
 
-  <label for="F">Fahrenheit</label>
-  <input type="radio" id="F" name="select" value="Fahrenheit">
+    <label for="F">Fahrenheit</label>
+    <input type="radio" id="F" name="select" value="Fahrenheit">
+
+    <div class="row">
+      <div class="col-md-5 col-md-offset-5">
+        <button type="button" id="convert" class="btn btn-primary">Convert!</button>
+      </div>
+      <div class="col-md-5 col-md-offset-5">
+        <button type="button" id="clear" class="btn btn-toolbar">Clear</button>
+      </div>
+    </div>
+  </form>
 
   <h2 id="converted"></h2>
 
-  <button type="button" id="convert" class="btn btn-primary">Convert!</button>
-  <button type="button" id="clear" class="btn btn-toolbar">Clear</button>
+
 
   <script src="converter.js"></script>
 </body>
