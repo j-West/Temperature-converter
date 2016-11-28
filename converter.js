@@ -22,8 +22,12 @@ fahrenheitRadio.addEventListener("click", function() {
   this.setAttribute("checked", "true");
 });
 
-function toCelsius (userInput) {
-  result = (userInput - 32) * '.5556';
+//  Function to convert the user's input from fahrenheit to celsius
+function toCelsius (tempNumber) {
+  result = (tempNumber - 32) * '.5556';
+  // Function to change the color of the resultHeading text depending on the temperature
+  changeColor(result);
+  //setting the resultHeading to the converted temperature
   resultHeading.innerHTML = result;
 }
 
@@ -61,14 +65,6 @@ function changeColor(result) {
     }
 }
 
-  if (event.key == 13) {
-    console.log("Enter was pressed");
-    if (celsiusRadio.hasAttribute("checked")) {
-      toCelsius(userInput);
-      console.log("Celsius function");
-    } else {
-      toFahrenheit(userInput);
-      console.log("fahrenheit function");
 
 // Function to grab the value of the input text field, then depending on which radio button is checked, calls either
 // the toCelsius or to Fahrenheit functions.

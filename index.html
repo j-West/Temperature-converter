@@ -6,9 +6,9 @@
    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <form>
+  <div id="wrapper">
     <label for="temp">Please enter a number to be converted</label>
-    <input type="text" id="temp" name="userInput" value="">
+    <input type="text" id="temp" name="temp">
 
     <label for="C">Celsius</label>
     <input type="radio" id="C" name="select" value="Celsius">
@@ -17,14 +17,11 @@
     <input type="radio" id="F" name="select" value="Fahrenheit">
 
     <div class="row">
-      <div class="col-md-5 col-md-offset-5">
+      <div class="col-md-4 col-md-offset-4 margin-top-space">
         <button type="button" id="convert" class="btn btn-primary">Convert!</button>
-      </div>
-      <div class="col-md-5 col-md-offset-5">
         <button type="button" id="clear" class="btn btn-toolbar">Clear</button>
-      </div>
     </div>
-  </form>
+  </div>
 
   <h2 id="converted"></h2>
 
