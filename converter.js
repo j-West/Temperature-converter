@@ -5,6 +5,7 @@ var clearButton = document.getElementById("clear");
 var celsiusRadio = document.getElementById("C");
 var fahrenheitRadio = document.getElementById("F");
 var resultHeading = document.getElementById("converted");
+var userInput;
 var result;
 
 // Add event listener to the celsius radio button.  When the event is fired, the function removes the ckecked attribute from
