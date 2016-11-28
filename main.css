@@ -1,3 +1,21 @@
 label, input[type="radio"] {
   display: inline;
 }
+
+#wrapper {
+	margin: 5em;
+	text-align: center;
+}
+
+#converted {
+	text-align: center;
+}
+
+#clear {
+	margin-left: 1em;
+
+}
+
+.margin-top-space {
+	margin-top: 1em;
+}
